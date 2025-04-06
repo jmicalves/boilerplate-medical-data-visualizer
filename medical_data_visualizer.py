@@ -29,7 +29,7 @@ def draw_cat_plot():
     lines = np.sort(df_cat['variable'].unique())
 
     # 8
-    fig = sns.catplot(data=df_counted, x='variable', y='total', col='cardio', hue='value', kind='bar', order=lines)
+    fig = sns.catplot(data=df_counted, x='variable', y='total', col='cardio', hue='value', kind='bar', order=lines).fig
 
 
     # 9
